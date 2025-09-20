@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    padding-inline: 10px;
+
+   background-image: url(./pattern-background-desktop.svg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.card {
+    max-width: 400px;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px hsl(224, 23%, 85%);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 15px;
+    color: hsl(223, 47%, 23%);
+}
+
+.primary-para {
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.content-part {
+    margin-block: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 75%;
+}
+
+.plan-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 20px;
+    background-color: hsl(225, 100%, 98%);
+    padding-block: 10px;
+    padding-inline: 10px;
+    border-radius: 8px;
+}
+
+.plan-info-right-part {
+    display: flex;
+    gap: 20px;
+}
+
+.price-para {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 15px;
+}
+
+
+.price-para+p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.plan-info a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.plan-info img{
+   width: 40px;
+}
+
+button{
+    width: 100%;
+    padding-block: 10px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 8px;
+    color: hsl(225, 100%, 98%);
+    margin-block: 20px;
+    box-shadow: 0 10px 20px hsl(224, 23%, 80%)
+}
+
+button:hover{
+    background-color: hsl(245, 75%, 62%);
+    cursor: pointer;
+}
+
+.cancel-order-para{
+    color: hsl(224, 23%, 55%);
+    font-size: 13px;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
