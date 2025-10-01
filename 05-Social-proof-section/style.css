@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin-block: 100px;
+  margin-inline: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 800;
+  padding-bottom: 20px;
+  line-height: .9;
+}
+
+.text-part p {
+  line-height: 1.2;
+  color: hsl(303, 10%, 53%);
+  font-weight: 600;
+}
+
+.rating-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rating-card {
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-block: 15px;
+
+  border-radius: 8px;
+}
+
+.rating-card p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.review-card {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  padding: 30px 25px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-card img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.profile-name p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.profile-name p:nth-of-type(2) {
+  color: hsl(333, 80%, 67%);
+}
+
+.profile+p {
+  line-height: 1.4;
+}
+
+@media (min-width: 880px) {
+
+  body {
+    font-size: 15px;
+    padding-inline: 10px;
+  }
+
+  .container {
+    max-width: 950px;
+    margin-inline: auto;
+  }
+
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+
+  .text-part p {
+    width: 42ch;
+  }
+
+
+  .text-part,
+  .rating-part {
+    flex-grow: 1;
+  }
+
+
+  .text-inner-part {
+    width: 400px;
+  }
+
+  .rating-card {
+    flex-direction: row;
+    padding: 15px 50px 15px 20px;
+  }
+
+  .cards {
+    flex-direction: row;
+    height: 230px;
+  }
+
+  .review-card {
+    height: 200px;
+  }
+
+
+  #first-rating-card,
+  .cards> :nth-child(1) {
+    align-self: start;
+  }
+
+  #second-rating-card,
+  .cards> :nth-child(2) {
+    align-self: center;
+  }
+
+  #third-rating-card,
+  .cards> :nth-child(3) {
+    align-self: end;
+  }
+}
